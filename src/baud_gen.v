@@ -16,7 +16,10 @@ module baud_gen(
         input rst,
         output reg baud_tick
         );
-parameter divisor=8 ;
+parameter clk_freq = 100000000;
+parameter baud_rate = 9600;
+
+localparam divisor = clk_freq / baud_rate;
 localparam width= $clog2(divisor) ;
 reg [width-1:0]count ;
 always@(posedge clk) begin
