@@ -40,8 +40,8 @@ Idle Start D0 D1 D2 D3 D4 D5 D6 D7 Stop Idle
 
 | Module         | Description                       | Status         |
 |----------------|-----------------------------------|----------------|
-| Baud Generator | Divides system clock to baud rate | 🔲 Not started |
-| UART TX        | Transmitter (parallel to serial)  | 🔲 Not started |
+| Baud Generator | Divides system clock to baud rate | ✅ Complete    |
+| UART TX        | Transmitter (parallel to serial)  | ✅ Complete    |
 | UART RX        | Receiver (serial to parallel)     | 🔲 Not started |
 | Top Module     | Connects TX and RX                | 🔲 Not started |
 
@@ -65,8 +65,8 @@ uart-transceiver/
 ## Progress Log
 
 - [x] Project setup
-- [ ] Baud rate generator
-- [ ] UART transmitter
+- [x] Baud rate generator
+- [x] UART transmitter
 - [ ] UART receiver
 - [ ] Top-level integration
 - [ ] Simulation and testing
@@ -74,7 +74,20 @@ uart-transceiver/
 
 ## What I'm Learning
 
-Will update as I build each module.
+Building this project from scratch has helped me understand much more than just UART communication. So far I've learned:
+
+- Designing synchronous digital systems using finite state machines (FSMs).
+- Generating baud-rate timing from a high-frequency system clock.
+- Using shift registers to perform parallel-to-serial data conversion.
+- Implementing serial communication using the UART 8N1 protocol.
+- Understanding why UART transmits data LSB first.
+- Coordinating counters, state machines, and timing signals in sequential logic.
+- Applying non-blocking assignments (<=) correctly in clocked designs.
+- Writing parameterized Verilog modules for reusable hardware.
+- Verifying RTL designs using simulation and waveform analysis in Vivado.
+- Organizing a hardware project with source code, testbenches, documentation, and version control using Git and GitHub.
+
+This section will continue to grow as I implement the UART receiver, integrate the complete transceiver, and explore more advanced digital design concepts.
 
 ---
 
