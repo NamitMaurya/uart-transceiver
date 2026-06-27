@@ -43,7 +43,7 @@ Idle Start D0 D1 D2 D3 D4 D5 D6 D7 Stop Idle
 | Baud Generator | Divides system clock to baud rate | ✅ Complete    |
 | UART TX        | Transmitter (parallel to serial)  | ✅ Complete    |
 | UART RX        | Receiver (serial to parallel)     | ✅ Complete    |
-| Top Module     | Connects TX and RX                | 🔲 Not started |
+| Top Module     | Connects TX and RX                | ✅ Complete    |
 
 ## Project Structure
 uart-transceiver/
@@ -68,7 +68,7 @@ uart-transceiver/
 - [x] Baud rate generator
 - [x] UART transmitter
 - [x] UART receiver
-- [ ] Top-level integration
+- [x] Top-level integration
 - [x] Simulation and testing
 - [x] Documentation
 
@@ -86,6 +86,7 @@ This project is helping me learn practical RTL design and digital communication 
 - Start-bit validation using mid-bit sampling
 - Writing reusable Verilog testbenches with tasks
 - RTL verification using waveform analysis in Vivado
+- Debugging timing and synchronization issues between interacting hardware modules
 - Git and GitHub workflow for hardware projects
 
 This section will continue to grow as I implement the UART receiver, integrate the complete transceiver, and explore more advanced digital design concepts.

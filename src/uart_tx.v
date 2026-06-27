@@ -76,8 +76,9 @@ always@(posedge clk) begin
                         end
                    end
                    DATA: begin
+                        tx<=shift_reg[0] ;
                         if(baud_tick) begin
-                                tx<=shift_reg[0] ;
+                                
                                 shift_reg<=shift_reg>>1 ;
                                 bit_count<=bit_count+1 ;
                                 
