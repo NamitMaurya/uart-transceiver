@@ -87,15 +87,6 @@ The testbench performs the following operations:
 
 ---
 
-## Simulation Results
-
-### Figure 1
-
-*Top-level loopback simulation showing transmission and reception of the byte `8'hB2`.*
-
-*(Insert waveform screenshot here.)*
-
----
 
 ## Integration Bug Encountered
 
